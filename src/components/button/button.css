@@ -1,0 +1,14 @@
+.button {
+  background: rgb(255, 255, 255);
+  width: 100px;
+  height: 40px;
+  outline-style: none;
+  border: hidden;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px -8px rgba(0,0,0,0.58);
+  border-radius: 14px;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.9);
+}
