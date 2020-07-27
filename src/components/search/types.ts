@@ -1,3 +1,9 @@
+export type Year = {
+  range: {};
+  total: number;
+  year: string;
+}
+
 export interface ResultGitHub {
   avatar_url: string;
   bio: string;
@@ -31,4 +37,5 @@ export interface ResultGitHub {
   type: string
   updated_at: string;
   url: string
+  contributions: Year[];
 }

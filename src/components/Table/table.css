@@ -1,0 +1,19 @@
+.content {
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  font-size: 14px;
+}
+
+.index-title {
+  font-weight: bold;
+  width: 150px;
+  background: rgb(233, 233, 233);
+}
+
+td {
+  background: rgb(233, 233, 233);
+  padding: 4px;
+}

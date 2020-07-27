@@ -7,7 +7,6 @@ test('Button - renders correctly', () => {
     .create(<Button onClick={() => jest.fn()} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
-
 });
 
 test('Button - test onClick', () => {
