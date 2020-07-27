@@ -1,10 +1,11 @@
 import React from 'react';
-import api from './index.service';
+import { api } from './index.service';
 
 test('api github - get user', done => {
   const fetchData = async (value: string) => {
     try {
-      const result = await api.get(value);
+      const result = await api.get(`users/${value}`);
+
       expect(result.data.name).toBe('Mauricio Soto');
       expect(result.status).toBe(200);
       done();
@@ -14,4 +15,8 @@ test('api github - get user', done => {
   }
 
   fetchData('soto92');
+});
+
+test('two plus two is four', () => {
+  expect(2 + 2).toBe(4);
 });
